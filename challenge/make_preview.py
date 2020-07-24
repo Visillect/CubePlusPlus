@@ -16,7 +16,9 @@ def parse_args():
     parser = argparse.ArgumentParser("Generate JPG previews of PNG images using illuminance chromaticity data (\"gt\" field) from JSON markup")
     parser.add_argument("-d", "--dir", required=False, default=None, help="Path to dir with PNG images")
     parser.add_argument("-i", "--imgs", nargs='+', required=False, default=[], help="Paths to PNG images")
-    return parser.parse_args()
+    args = parser.parse_args()
+    assert bool(args.imgs) ^ bool(args.dir), "Directory (explicit) or images should be specified"
+    return args
 
 
 def linearize(img, black_lvl=2048, saturation_lvl=2**14-1):
