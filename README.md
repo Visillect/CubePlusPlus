@@ -2,7 +2,7 @@
 Cube++ - is the new dataset for the color constancy problem that continues the Cube+ dataset https://ipg.fer.hr/ipg/resources/color_constancy. The Cube++ dataset is used in ICMV 2020 2nd IEC and will be fully published after the challenge. 
 
 # ICMV 2020 2nd IEC
-The goal of the challenge is to predict illumination chromaticity. The challenge has three tracks for various scene types: 
+The goal of the 2nd International Illumination Estimation Challenge (IEC) is to develop algorithms for estimation source illumination chromaticity. The challenge has three tracks for various scenarios:
 * Indoor 
 * General (indoor included)
 * Two illuminant 
