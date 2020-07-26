@@ -49,12 +49,15 @@ def mean_repr_ang_error(gt, pred):
     return np.mean(reprs)
 
 
-def mean_squared_repr_ang_error(gt, pred):
+def worst_mean_repr_ang_error(gt, pred, skip_share=0.75):
     reprs = repr_ang_error(gt=gt, pred=pred)
-    return np.mean(reprs ** 2)
+    reprs = sorted(reprs)
+    worst = reprs[int(skip_share * len(reprs)):]
+    return np.mean(worst)
 
 
-def two_illuminant_error(gt, pred, skip_share=0.75):
+def two_illuminant_error(gt, pred):
+    """mean squared simmetrized reproduction angular error"""
     gt1, gt2 = gt
     pred1, pred2 = pred
 
@@ -67,10 +70,7 @@ def two_illuminant_error(gt, pred, skip_share=0.75):
         repr_ang_error(gt2, pred1) ** 2 
     )
     reprs_sq = np.minimum(reprs_sq_straight, reprs_sq_reverted)
-    
-    reprs_sq = sorted(reprs_sq)
-    worst = reprs_sq[int(skip_share * len(reprs_sq)):]
-    return np.mean(worst)
+    return np.mean(reprs_sq)
 
 
 def calc_metrics(gt, pred, problem_type): 
@@ -87,11 +87,11 @@ def calc_metrics(gt, pred, problem_type):
         )                
         return {'mean_repr_ang_error': error}
     elif problem_type == 'general': 
-        error = mean_squared_repr_ang_error(
+        error = worst_mean_repr_ang_error(
             joined[['r', 'g', 'b']].to_numpy(), 
             joined[['p_r', 'p_g', 'p_b']].to_numpy()
         )                
-        return {'mean_squared_repr_ang_error': error}
+        return {'worst_mean_repr_ang_error': error}
     elif problem_type == 'two_illuminant':
         gt_vals = (
             joined[['r1', 'g1', 'b1']].to_numpy(),
