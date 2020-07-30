@@ -32,7 +32,7 @@ cd challenge
 python3 make_preview.py -i IMAGE_PATH.PNG
 ```
 
-The *calc_metrics.py* script calculates the final error metrics of the competition. It has the following arguments
+The *calc_metrics.py* script calculates the final error metrics. It has the following arguments
 * **--problem** - the challenge track *general*, *indoor* or *two_illuminant*, metrics for which to calulate
 * **--gt** - csv with the ground truth answers
 * **--pred** - csv with the predicted answers 
