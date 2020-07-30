@@ -13,8 +13,9 @@ Train | Test (password-protected)
 [general 1/4](https://drive.google.com/file/d/1-jWLZeG4h0OkjDhCgD7D8Q6cphhnkJCp/view?usp=sharing), [2/4](https://drive.google.com/file/d/1HxkQ4JJb2Nbp0s0ikI99lwBUHyV-VRw8/view?usp=sharing), [3/4](https://drive.google.com/file/d/1cjQ5HEt7KE268iv3uOn1mVGeIryzbUHg/view?usp=sharing), [4/4 (same as indoor)](https://yadi.sk/d/84w9OHpUZIoPZA) | [general_test](https://yadi.sk/d/M8Jdq_tuiR-I4A) 
 [indoor](https://yadi.sk/d/84w9OHpUZIoPZA) | [indoor_test](https://yadi.sk/d/KruOvfdD10ptag) 
 [two_illuminant](https://drive.google.com/file/d/12Qq32voyQzF8Vf6c-o_6j2h3EuAwQatE/view?usp=sharing) | [two_illuminant_test](https://yadi.sk/d/8u9y4uAU1bBFrQ)
+Test password is **ewxtppgskme64kip**
 
-See http://chromaticity.iitp.ru for more details.
+See http://chromaticity.iitp.ru for more details. 
 
 ## Scripts 
 For participants, we prepared examples of two scripts in python3: 
