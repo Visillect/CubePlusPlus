@@ -19,7 +19,7 @@ Images were obtained with Canon 550D and Canon 600D cameras. As a calibration to
 * *auxiliary/extra/exif/\*.json* – Extracted EXIF data
 * *auxiliary/extra/gt_json/\*.json* – Calculated ground truth values in JSON format
 
-## Manually labeled features description:
+## Manually labeled features description
 * daytime – time of the day when the image was taken. Possible answers: day, night, unknown.
 * place – is the image taken indoor or outdoor. Possible answers: indoor, outdoor, unknown.
 * illumination – is the illumination of the scene natural or artificial. Possible answers: natural, artificial, mixed, unknown.
@@ -29,7 +29,7 @@ Images were obtained with Canon 550D and Canon 600D cameras. As a calibration to
 * has_known_objects – are there any objects with known colors in the scene (except for SpyderCube). Possible answers: True, False.
 * light_objects – what illumination sources (out of the predetermined list) are presented in the scene. May have multiple answers. Possible answers: sun, sky, lamp, flash, none.
 
-## Camera and EXIF data included: 
+## Camera and EXIF data included
 * MakerNotes:InternalSerialNumber – Internal Serial number of the camera
 * EXIF:ISO – ISO
 * EXIF:Model – Model of the camera
