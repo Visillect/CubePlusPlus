@@ -1,44 +1,42 @@
 # Cube++
-Cube++ - is a new dataset for the color constancy problem that continues the Cube+ dataset https://ipg.fer.hr/ipg/resources/color_constancy. The Cube++ dataset is used in ICMV 2020 2nd IEC and will be fully published soon. 
+Cube++ is a new dataset for the color constancy problem that continues the Cube+ dataset https://ipg.fer.hr/ipg/resources/color_constancy. It includes images of different scenes under various conditions. For calculating the ground truth illuminance object with known colors appears in the scene. The Cube++ dataset is used in ICMV 2020 2nd IEC and will be fully published soon. 
 
+# Characteristics
+* X images
+*	Manual annotation and metadata for images
+*	Various illumination scenes
 
-# ICMV 2020 2nd IEC
-The goal of the 2nd International Illumination Estimation Challenge (IEC) is to develop algorithms for estimation of illumination chromaticity. The challenge consists of three tracks. 
-* Indoor 
-* General (indoor included)
-* Two illuminant 
+# Detailed description
+Images were obtained with Canon 550D and Canon 600D cameras. As a calibration tool SpyderCube was used due to its ability to identify multiple illumination sources.
 
-See http://chromaticity.iitp.ru for more details. 
+## Dataset includes
+* *auxiliary/source/CR2/\*.CR2* – Raw CR2 images
+* *PNG/\*.png* – 16-bit PNG images, generated using original CR2 files
+* *JPG/\*.jpg* – Downscaled JPG images
+* *auxiliary/source/JPG.JSON/\*.jpg.json* – JSON markup files. Each file contains manually labeled annotation
+* *gt.csv* – Ground truth file. The table contains automatically calculated ground truth values. The columns are: image and for each of the 4 triangles (left, right, left bottom, right bottom) it contains three columns r, g, b with the corresponding RGB illumination estimation. The illumination estimation is normalized so that r + g + b = 1
+* *properties.csv* – Annotation and metadata file. The table contains the most relevant meta information of the dataset images. It includes the average triangle brightness, manually labeled properties, selected EXIF fields
+* *auxiliary/extra/exif/\*.json* – Extracted EXIF data
+* *auxiliary/extra/gt_json/\*.json* – Calculated ground truth values in JSON format
 
-## Scripts 
-For participants, we prepared examples of two scripts in python3: 
-* *challenge/make_preview.py* to generate image previews
-* *challenge/calc_metrics.py* to calculate final metrics
+## Manually labeled features description:
+* daytime – time of the day when the image was taken. Possible answers: day, night, unknown.
+* place – is the image taken indoor or outdoor. Possible answers: indoor, outdoor, unknown.
+* illumination – is the illumination of the scene natural or artificial. Possible answers: natural, artificial, mixed, unknown.
+* is_sharp – is the image sharp. Possible answers: True, False.
+* shadows – are there any shadows in the scene. Possible answers: yes, no, unknown.
+* richness – does the scene has many objects of various colors. Possible answers: rich, simple, unknown.
+* has_known_objects – are there any objects with known colors in the scene (except for SpyderCube). Possible answers: True, False.
+* light_objects – what illumination sources (out of the predetermined list) are presented in the scene. May have multiple answers. Possible answers: sun, sky, lamp, flash, none.
 
-To install the required packages use the following command
-```bash
-pip3 install -r requirements.txt
-```
-
-The *make_preview.py* script visualizes the train PNG images corrected in respect to the corresponding ground truth illumination chromaticities listed in the JSON annotation files. For example
-```
-cd challenge
-python3 make_preview.py -i IMAGE_PATH.PNG
-```
-
-The *calc_metrics.py* script calculates the final error metrics. It has the following arguments
-* **--problem** - the challenge track *general*, *indoor* or *two_illuminant*, metrics for which to calulate
-* **--gt** - csv with the ground truth answers
-* **--pred** - csv with the predicted answers 
-* **[--output]** - file to save results (optional)
-
-For example, the metrics of constant baseline answers for each track can be calculated with
-```bash
-cd challenge
-python3 calc_metrics.py --problem general --gt train/general.csv --pred baseline_examples/const/general.csv 
-python3 calc_metrics.py --problem indoor --gt train/indoor.csv --pred baseline_examples/const/indoor.csv 
-python3 calc_metrics.py --problem two_illuminant --gt train/two_illuminant.csv --pred baseline_examples/const/two_illuminant.csv 
-```
+## Camera and EXIF data included: 
+* MakerNotes:InternalSerialNumber – Internal Serial number of the camera
+* EXIF:ISO – ISO
+* EXIF:Model – Model of the camera
+* EXIF:ExposureTime – Exposure time of the photo
+* EXIF:ApertureValue – Aperture value of the photo
+* MakerNotes:LensModel – Model of the camera’s lens
+* EXIF:Orientation – Image orientation
 
 # Papers
 If you use the dataset in your research, please refer to our paper:
