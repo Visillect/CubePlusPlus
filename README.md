@@ -2,7 +2,7 @@
 
 ![Image examples](./description/examples.jpg)
 
-Cube++ is a new dataset for the color constancy problem that continues the Cube+ dataset https://ipg.fer.hr/ipg/resources/color_constancy. It includes images of different scenes under various conditions. For calculating the ground truth illuminance object with known colors appears in the scene. The Cube++ dataset was used in ICMV 2020 2nd IEC. 
+Cube++ is a new dataset for the color constancy problem that continues the [Cube+ dataset](https://ipg.fer.hr/ipg/resources/color_constancy). It includes images of different scenes under various conditions. For calculating the ground truth illuminance object with known colors appears in the scene. The Cube++ dataset was used in ICMV 2020 2nd IEC. 
 
 
 **The dataset will be published soon**. 
@@ -15,7 +15,7 @@ Cube++ is a new dataset for the color constancy problem that continues the Cube+
 # Dataset description
 Images were obtained with a same sensor on Canon 550D and Canon 600D cameras. As a calibration tool SpyderCube was used due to its ability to identify multiple illumination sources. 
 
-See [the file](./description/description.md) for a more detailed description.
+See also a more [detailed description](./description/description.md).
 
 ## Dataset includes
 * **PNG/{img_id}.png** – 16-bit PNG images
