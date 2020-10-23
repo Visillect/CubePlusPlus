@@ -91,6 +91,6 @@ The table with a manually full_estimation labeled annotation.
 
 The image-wise JSON markup files. Each file contains manually labeled annotation and an automatically calculated overexpose esimation
 
-The annotation contains the cube faces coordinates (they can be slightly outside of the image).
+The annotation contains the cube faces coordinates (coordinates may be slightly outside of the image).
 
 
