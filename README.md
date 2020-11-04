@@ -29,6 +29,17 @@ Images were obtained with sensors of same type on Canon 550D and Canon 600D came
 
 See also a more [detailed description](./description/description.md).
 
+# Small version of Cube++
+
+In addition to the main Cube++ dataset, small and simpler version of it is prepared. Small dataset contains 4x downscaled images which have <2 degrees difference between left and right ground truth illumination estimation. It includes only images with single source illumination, consequently ground truth file contains only one ground truth per image. Small dataset wieghts around 2GB.
+Small dataset contains PNG and JPG files, gt.csv with ground truth data and properties.csv with manual annotation data:
+* **PNG/{img_id}.png** – 16-bit PNG images
+* **gt.csv** – Ground truth chromaticities answers. Ground truth file. The table contains automatically calculated ground truth values. The columns are: image (contains image id) and three columns r, g, b with the corresponding RGB illumination estimation. The illumination estimation is normalized so that r + g + b = 1
+* **properties.csv** – Annotation and metadata file. The table contains the most relevant meta information of the dataset images. It includes image column (contains image id), ds_version (0.0 for Cube images; 1.0 for Cube+ extension and IEC2019 test images; 2.0 for Cube++ extension), manually labeled properties (only daytime; place; illumination; is_sharp; shadows), selected EXIF fields
+* **JPG/{img_id}.jpg** – JPEG images, for visualization purposes only
+
+
+
 # Papers
 If you use the dataset in your research, please refer to the following paper:
 * Ershov, Egor I., A. V. Belokopytov, and A. V. Savchik. "Problems of dataset creation for light source estimation." arXiv preprint [arXiv:2006.02692](https://arxiv.org/abs/2006.02692).
