@@ -39,7 +39,7 @@ See also a more [detailed description](./description/description.md).
 
 ## SimpleCube++
 
-In addition to the main Cube++ dataset, small and simpler version of it is prepared. Small dataset contains 4x downscaled images which have <1 degrees difference between left and right ground truth illumination estimation. It includes only images with single source illumination, consequently ground truth file contains only one ground truth per image. Small dataset wieghts around 2GB.
+In addition to the main Cube++ dataset, small and simpler version of it is prepared. Simple dataset contains 4x downscaled images that have less than 1° difference between left and right ground truth illumination estimation. It includes only images with single source illumination; consequently, there is only one ground truth per image. The simple dataset weights around 2GB.
 
 Small dataset contains PNG and JPG files, gt.csv with ground truth data and properties.csv with manual annotation data:
 * **train**

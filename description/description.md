@@ -1,4 +1,4 @@
-# Technical desciption of the dataset files
+# Technical description of the dataset files
 
 <!-- * **PNG/{img_id}.png** – 16-bit PNG images
 * **gt.csv** – Ground truth chromaticities answers. Ground truth file. The table contains automatically calculated ground truth values. The columns are: image and for each of the 4 triangles (left, right, left bottom, right bottom) it contains three columns r, g, b with the corresponding RGB illumination estimation. The illumination estimation is normalized so that r + g + b = 1
@@ -31,7 +31,7 @@ The table contains automatically calculated ground truth values. The columns are
 Image stands for the image id in the format dd_dddd, where d is a 0-9 digit.
 Other 12 columns contain r, g, b chromaticities for each of the 4 triangles (left (gray), right (gray), left white, right white). They are the corresponding illumination estimation ground-truth. The ground-truth is normalized so that r + g + b = 1.
 The other 3 values correspond to the normed mean (bisector) chromaticity of the left (gray) and the right (gray) ones. The mean chromaticity is calculated for 2234 images, that satisfy the following conditions.
-The image should be manually marked with estimation=full. The angle between left (gray) and right (gray) ground truth chromaticities should be less then 1 degree. Both left and right gray triangles should be birght enough: tr_illuminance is bigger than 0.1.
+The image should be manually marked with estimation=full. The angle between left (gray) and right (gray) ground truth chromaticities should be less than 1 degree. Both left and right gray triangles should be bright enough: tr_illuminance value is bigger than 0.1.
 
 ## properties.csv
 The table contains the most relevant meta-information for each image. The columns are:
@@ -106,7 +106,7 @@ The dataset is divided into train and test parts for simplicity. Each image is i
 16-bit 648x432 png image. They are generated from CR2 files with the simplest debayering, 4x downscaling, 175x250 right bottom rectangle cropping.
 
 The black level is approximately 2048, not subtracted, as it may be useful for some algorithms.
-The saturation level depend on the image and is less than 16384.
+The saturation level depends on the image and is less than 16384.
 
 
 ## {test/train}/gt.csv
