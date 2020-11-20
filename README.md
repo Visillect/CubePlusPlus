@@ -9,6 +9,8 @@
 
 Cube++ is a new dataset for the color constancy problem that continues on the [Cube+ dataset](https://ipg.fer.hr/ipg/resources/color_constancy). It includes 4890 images of different scenes under various conditions. For calculating the ground truth illumination, a calibration object with known surface colors was placed in every scene. The Cube++ dataset was used in [ICMV 2020 2nd Illumination Estimation Challenge](http://chromaticity.iitp.ru/).
 
+The dataset is available on ftp://vis.iitp.ru/Cube++
+
 # Description
 * 4890 raw camera images
 * 200 GB of raw and preprocessed data
