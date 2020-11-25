@@ -57,4 +57,5 @@ See also a more [detailed description](./description/description.md#SimpleCube++
 # Papers
 If you use the dataset in your research, please refer to the following paper:
 * Egor Ershov, Alex Savchik, Illya Semenkov, Nikola Banić, Alexander Belokopytov, Daria Senshina, Karlo Koscević, Marko Subašić, and Sven Lončarić. "The Cube++ Illumination Estimation Dataset" arXiv preprint [arXiv:2011.10028](https://arxiv.org/abs/2011.10028).
+* Egor Ershov, Alex Savchik, Alexander Belokopytov "Problems of dataset creation for light source estimation." arXiv preprint arXiv:2006.02692 (2020).
 
