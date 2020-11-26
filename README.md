@@ -52,7 +52,7 @@ Small dataset contains PNG and JPG files, gt.csv with ground truth data and prop
     * **{test/train}_properties.csv** – Annotation and metadata file. The table contains the most relevant meta information of the dataset images. It includes image column (contains image id), ds_version (0.0 for Cube images; 1.0 for Cube+ extension and IEC2019 test images; 2.0 for Cube++ extension), manually labeled properties (only daytime; place; illumination; is_sharp; shadows)
     * **JPG/{test/train}_{img_id}.jpg** – JPEG images with cropped cube area, for visualization purposes only
 
-See also a more [detailed description](./description/description.md#SimpleCube++).
+See also a more [detailed description](./description/description.md#simplecube).
 
 # Papers
 If you use the dataset in your research, please refer to the following paper:
@@ -69,7 +69,7 @@ If you use the dataset in your research, please refer to the following paper:
 ```
 @article{ershov2020problems,
   title={Problems of dataset creation for light source estimation},
-  author={Ershov, Egor I and Belokopytov, AV and Savchik, AV},
+  author={Ershov, Egor and Belokopytov, Alexander and Savchik, Alex},
   journal={arXiv preprint arXiv:2006.02692},
   year={2020}
 }
