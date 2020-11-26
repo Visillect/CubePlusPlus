@@ -21,7 +21,7 @@ The Cube++ dataset is available on [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/
 ## Cube++
 Images were obtained with sensors of same type on Canon 550D and Canon 600D cameras. As a calibration tool, SpyderCube was used due to its ability to identify multiple illumination sources from different angles. The dataset includes:
 * **PNG/{img_id}.png** – 16-bit PNG images
-* **gt.csv** – Ground truth chromaticities answers. Ground truth file. The table contains automatically calculated ground truth values. The columns are: image and for each of the 4 triangles (left, right, left bottom, right bottom) it contains three columns r, g, b with the corresponding RGB illumination estimation. The illumination estimation is normalized so that ```r + g + b = 1```
+* **gt.csv** – Ground truth chromaticities answers. Ground truth file. The table contains automatically calculated ground truth values. The columns are: image and for each of the 4 triangles (left, right, left bottom, right bottom) it contains three columns r, g, b with the corresponding RGB illumination estimation. The illumination estimation is normalized so that `r + g + b = 1`
 * **properties.csv** – Annotation and metadata file. The table contains the most relevant meta information of the dataset images. It includes the average triangle brightness, manually labeled properties, selected EXIF fields
 * **JPG/{img_id}.jpg** – JPEG images, for visualization purposes only
 * **auxiliary/**
@@ -44,7 +44,7 @@ In addition to the main Cube++ dataset, small and simpler version of it is prepa
 Small dataset contains PNG and JPG files, gt.csv with ground truth data and properties.csv with manual annotation data:
 * **train**
     * **PNG/{img_id}.png** – 16-bit PNG images with cropped cube area
-    * **gt.csv** – Ground truth chromaticities answers. Ground truth file. The table contains automatically calculated ground truth values. The columns are: image (contains image id) and three columns r, g, b with the corresponding RGB illumination estimation. The illumination estimation is normalized so that r + g + b = 1
+    * **gt.csv** – Ground truth chromaticities answers. Ground truth file. The table contains automatically calculated ground truth values. The columns are: image (contains image id) and three columns r, g, b with the corresponding RGB illumination estimation. The illumination estimation is normalized so that `r + g + b = 1`
 * **test** – The same format
     * **PNG/{img_id}.png**
     * **gt.csv**
@@ -56,5 +56,20 @@ See also a more [detailed description](./description/description.md#SimpleCube++
 
 # Papers
 If you use the dataset in your research, please refer to the following paper:
-* Egor Ershov, Alex Savchik, Illya Semenkov, Nikola Banić, Alexander Belokopytov, Daria Senshina, Karlo Koscević, Marko Subašić, and Sven Lončarić. "The Cube++ Illumination Estimation Dataset" arXiv preprint [arXiv:2011.10028](https://arxiv.org/abs/2011.10028).
-* Ershov, Egor I., A. V. Belokopytov, and A. V. Savchik. "Problems of dataset creation for light source estimation." arXiv preprint [arXiv:2006.02692](https://arxiv.org/abs/2006.02692).
+* [The Cube++ Illumination Estimation Dataset](https://arxiv.org/abs/2011.10028).
+```
+@article{ershov2020cube++,
+  title={The Cube++ Illumination Estimation Dataset},
+  author={Ershov, Egor and Savchik, Alex and Semenkov, Illya and Bani{\'c}, Nikola and Belokopytov, Alexander and Senshina, Daria and Koscevi{\'c}, Karlo and Suba{\v{s}}i{\'c}, Marko and Lon{\v{c}}ari{\'c}, Sven},
+  journal={arXiv preprint arXiv:2011.10028},
+  year={2020}
+}
+```
+* [Problems of dataset creation for light source estimation](https://arxiv.org/abs/2006.02692).
+```
+@article{ershov2020problems,
+  title={Problems of dataset creation for light source estimation},
+  author={Ershov, Egor I and Belokopytov, AV and Savchik, AV},
+  journal={arXiv preprint arXiv:2006.02692},
+  year={2020}
+}```
