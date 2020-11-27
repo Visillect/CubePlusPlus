@@ -30,12 +30,15 @@ The table contains automatically calculated ground truth values. The columns are
 
 Image stands for the image id in the format dd_dddd, where d is a 0-9 digit.
 Other 12 columns contain r, g, b chromaticities for each of the 4 triangles (left (gray), right (gray), left white, right white). They are the corresponding illumination estimation ground-truth. The ground-truth is normalized so that r + g + b = 1.
-The other 3 values correspond to the normed mean (bisector) chromaticity of the left (gray) and the right (gray) ones. The mean chromaticity is calculated for 2234 images, that satisfy the following conditions.
-The image should be manually marked with estimation=full. The angle between left (gray) and right (gray) ground truth chromaticities should be less than 1 degree. Both left and right gray triangles should be bright enough: tr_illuminance value is bigger than 0.1.
+
+The other 3 values correspond to the normed mean (bisector) chromaticity of the left (gray) and the right (gray) ones. The mean chromaticity is calculated for 2234 images, that satisfy the following conditions:
+* The image should be manually marked with estimation=full. 
+* The angle between left (gray) and right (gray) ground truth chromaticities should be less than 1 degree. 
+* Both left and right gray triangles should be bright enough: tr_illuminance value is bigger than 0.1.
 
 ## properties.csv
 The table contains the most relevant meta-information for each image. The columns are:
-* *image* - image identificators
+* *image* - image identificators.
 * *full_estimation* - specifies if the image has a full estimation of the scene illumination or a partial one only. Questionably good images may be labeled as partially estimated ones.
 * illuminance features - values within a range 0-1 specifying average triangle illuminance:
     * *left_tr_illuminance*,
@@ -70,7 +73,7 @@ The table also contains manual annotation data and selected subset of camera EXI
 
 ## auxiliary/extra
 Additional useful files.
-* *exif/{img_id}.json* – All the extracted EXIF data
+* *exif/{img_id}.json* – All the extracted EXIF data.
 * *gt_json/{img_id}.json* – Calculated ground-truth values. The same as in gt.csv or properties.csv
 * *exif_stat.csv* – Statistics on EXIF data of the dataset.
 
