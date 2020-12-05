@@ -7,15 +7,17 @@
 04_9457 02_8337 05_9565 03_9187 00_1005 00_1638
 00_0021 00_1628 00_1001 20_2821 21_4445 01_7860 -->
 
-Cube++ is a new dataset for the color constancy problem that continues on the [Cube+ dataset](https://ipg.fer.hr/ipg/resources/color_constancy). It includes 4890 images of different scenes under various conditions. For calculating the ground truth illumination, a calibration object with known surface colors was placed in every scene. The Cube++ dataset was used in [ICMV 2020 2nd Illumination Estimation Challenge](http://chromaticity.iitp.ru/).
+Cube++ is a novel dataset for the color constancy problem that continues on the [Cube+ dataset](https://ipg.fer.hr/ipg/resources/color_constancy). It includes 4890 images of different scenes under various conditions. For calculating the ground truth illumination, a calibration object with known surface colors was placed in every scene. The Cube++ dataset was used in [ICMV 2020 2nd Illumination Estimation Challenge](http://chromaticity.iitp.ru/).
 
-The dataset is available on zenodo.org:
-* [Cube++](https://zenodo.org/record/4153431) (200GB)
-* [SimpleCube++](https://zenodo.org/record/4153431/files/SimpleCube%2B%2B.zip) (2GB) 
-* and on the mirror [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/Cube++) 
-
-under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
-
+# Download
+Data is avalilable on zenodo.org and the FTP mirror under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. 
+* [Cube++](https://zenodo.org/record/4153431) (200GB, 4890 images) can be downloaded with the following commands 
+```bash
+pip install zenodo-get
+zenodo_get https://zenodo.org/record/4153431 --output_dir=Cube++
+```
+* [SimpleCube++](https://zenodo.org/record/4153431/files/SimpleCube%2B%2B.zip) (2GB, 2234 images) 
+* FTP mirror [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/Cube++) 
 
 
 # Description
@@ -46,7 +48,7 @@ See also a more [detailed description](./description/description.md).
 
 ## SimpleCube++
 
-In addition to the main Cube++ dataset, small and simpler version of it is prepared. Simple dataset contains 4x downscaled images that have less than 1° difference between left and right ground truth illumination estimation. It includes only images with single source illumination; consequently, there is only one ground truth per image. The simple dataset weights around 2GB.
+In addition to the main Cube++ dataset, small and simpler version of it is prepared. Simple dataset contains 4x downscaled images that have less than 1° difference between left and right ground truth illumination estimation. It includes only 2234 images with single source illumination; consequently, there is only one ground truth per image. The simple dataset weights around 2GB.
 
 Small dataset contains PNG and JPG files, gt.csv with ground truth data and properties.csv with manual annotation data:
 * **train**
