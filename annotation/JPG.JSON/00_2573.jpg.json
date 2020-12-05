@@ -1,0 +1,113 @@
+{
+  "ds_version": "1.0",
+  "left_white_overexposed": true,
+  "objects": [
+    {
+      "data": [
+        [
+          1996.0,
+          1606.0
+        ],
+        [
+          2012.0,
+          1371.0
+        ],
+        [
+          2213.0,
+          1474.0
+        ]
+      ],
+      "tags": [
+        "left_b"
+      ],
+      "type": "region"
+    },
+    {
+      "data": [
+        [
+          2012.0,
+          1373.0
+        ],
+        [
+          2212.0,
+          1473.0
+        ],
+        [
+          2207.0,
+          1251.0
+        ]
+      ],
+      "tags": [
+        "left"
+      ],
+      "type": "region"
+    },
+    {
+      "data": [
+        [
+          2401.0,
+          1357.0
+        ],
+        [
+          2212.0,
+          1473.0
+        ],
+        [
+          2207.0,
+          1254.0
+        ]
+      ],
+      "tags": [
+        "right"
+      ],
+      "type": "region"
+    },
+    {
+      "data": [
+        [
+          2432.0,
+          1590.0
+        ],
+        [
+          2213.0,
+          1473.0
+        ],
+        [
+          2402.0,
+          1357.0
+        ]
+      ],
+      "tags": [
+        "right_b"
+      ],
+      "type": "region"
+    }
+  ],
+  "original_gt": [
+    0.2206984,
+    0.4721678,
+    0.3071338
+  ],
+  "properties": {
+    "daytime": "unknown",
+    "estimation": "full",
+    "gdpr_objects": [
+      "none"
+    ],
+    "has_cube_plus": true,
+    "has_known_objects": false,
+    "illumination": "unknown",
+    "is_sharp": true,
+    "light_objects": [
+      "none"
+    ],
+    "place": "unknown",
+    "richness": "simple",
+    "shadows": "unknown"
+  },
+  "right_white_overexposed": true,
+  "size": [
+    2592,
+    1728
+  ]
+}
