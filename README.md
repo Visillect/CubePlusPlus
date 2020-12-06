@@ -15,6 +15,8 @@ Data is avalilable on zenodo.org and the FTP mirror under [CC BY 4.0](https://cr
 ```bash
 pip install zenodo-get
 zenodo_get https://zenodo.org/record/4153431 --output_dir=Cube++
+cd Cube++
+wget ftp://vis.iitp.ru/Cube++/PNG0.zip
 ```
 * [SimpleCube++](https://zenodo.org/record/4153431/files/SimpleCube%2B%2B.zip) (2GB, 2234 images) 
 * FTP mirror [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/Cube++) 
