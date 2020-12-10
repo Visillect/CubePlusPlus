@@ -14,7 +14,7 @@ Data is avalilable on zenodo.org and the FTP mirror under [CC BY 4.0](https://cr
 * [Cube++](https://zenodo.org/record/4153431) (200GB, 4890 images) with [PNG0](https://yadi.sk/d/OrIkFq2yYQKJ3Q) can be downloaded with the following commands 
 ```bash
 pip install zenodo-get
-zenodo_get https://zenodo.org/record/4153431 --output_dir=Cube++
+zenodo_get https://zenodo.org/record/4153431 --output-dir=Cube++
 cd Cube++/
 wget https://storage.yandexcloud.net/cubepng0/PNG0.zip
 ```
