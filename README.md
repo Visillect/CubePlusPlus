@@ -19,6 +19,9 @@ cd Cube++/
 wget https://storage.yandexcloud.net/cubepng0/PNG0.zip
 ```
 * [SimpleCube++](https://zenodo.org/record/4153431/files/SimpleCube%2B%2B.zip) (2GB, 2234 images) 
+```bash
+wget https://zenodo.org/record/4153431/files/SimpleCube++.zip
+```
 * FTP mirror [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/Cube++) 
 
 
