@@ -70,13 +70,16 @@ See also a more [detailed description](./description/description.md#simplecube).
 
 # Papers
 If you use the dataset in your research, please refer to the following paper:
-* [The Cube++ Illumination Estimation Dataset](https://arxiv.org/abs/2011.10028).
+* [The Cube++ Illumination Estimation Dataset](https://ieeexplore.ieee.org/document/9296220) (arXiv [preprint](https://arxiv.org/abs/2011.10028)).
 ```
 @article{ershov2020cube++,
   title={The Cube++ Illumination Estimation Dataset},
-  author={Ershov, Egor and Savchik, Alex and Semenkov, Illya and Bani{\'c}, Nikola and Belokopytov, Alexander and Senshina, Daria and Koscevi{\'c}, Karlo and Suba{\v{s}}i{\'c}, Marko and Lon{\v{c}}ari{\'c}, Sven},
-  journal={arXiv preprint arXiv:2011.10028},
-  year={2020}
+  author={Ershov, Egor and Savchik, Alexey and Semenkov, Illya and Bani{\'c}, Nikola and Belokopytov, Alexander and Senshina, Daria and Ko{\v{s}}{\v{c}}evi{\'c}, Karlo and Suba{\v{s}}i{\'c}, Marko and Lon{\v{c}}ari{\'c}, Sven},
+  journal={IEEE Access},
+  volume={8},
+  pages={227511--227527},
+  year={2020},
+  publisher={IEEE}
 }
 ```
 * [Problems of dataset creation for light source estimation](https://arxiv.org/abs/2006.02692).
