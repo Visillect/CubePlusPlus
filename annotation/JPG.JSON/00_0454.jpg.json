@@ -1,0 +1,124 @@
+{
+  "contest_like": false,
+  "ds_version": "0.0",
+  "left_white_overexposed": false,
+  "objects": [
+    {
+      "data": [
+        [
+          2366.0,
+          1176.0
+        ],
+        [
+          2372.0,
+          1419.0
+        ],
+        [
+          2175.0,
+          1323.0
+        ]
+      ],
+      "tags": [
+        "left"
+      ],
+      "type": "region"
+    },
+    {
+      "data": [
+        [
+          2367.0,
+          1178.0
+        ],
+        [
+          2587.0,
+          1306.0
+        ],
+        [
+          2373.0,
+          1418.0
+        ]
+      ],
+      "tags": [
+        "right"
+      ],
+      "type": "region"
+    },
+    {
+      "data": [
+        [
+          2586.0,
+          1535.0
+        ],
+        [
+          2587.0,
+          1305.0
+        ],
+        [
+          2373.0,
+          1420.0
+        ]
+      ],
+      "tags": [
+        "right_b"
+      ],
+      "type": "region"
+    },
+    {
+      "data": [
+        [
+          2170.0,
+          1548.0
+        ],
+        [
+          2175.0,
+          1322.0
+        ],
+        [
+          2372.0,
+          1418.0
+        ]
+      ],
+      "tags": [
+        "left_b"
+      ],
+      "type": "region"
+    }
+  ],
+  "original_gt": [
+    0.20263706,
+    0.46703678,
+    0.33032616
+  ],
+  "original_left_gt": [
+    0.20263706,
+    0.46703678,
+    0.33032616
+  ],
+  "original_right_gt": [
+    0.20638821,
+    0.46944599,
+    0.32416581
+  ],
+  "properties": {
+    "daytime": "day",
+    "estimation": "full",
+    "gdpr_objects": [
+      "none"
+    ],
+    "has_cube_plus": true,
+    "has_known_objects": true,
+    "illumination": "natural",
+    "is_sharp": true,
+    "light_objects": [
+      "none"
+    ],
+    "place": "outdoor",
+    "richness": "rich",
+    "shadows": "yes"
+  },
+  "right_white_overexposed": false,
+  "size": [
+    2592,
+    1728
+  ]
+}

@@ -11,12 +11,17 @@ Cube++ is a novel dataset for the color constancy problem that continues on the 
 
 # Download
 Data is avalilable on zenodo.org and the FTP mirror under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. 
-* [Cube++](https://zenodo.org/record/4153431) (200GB, 4890 images) can be downloaded with the following commands 
+* [Cube++](https://zenodo.org/record/4153431) (200GB, 4890 images) with [PNG0](https://yadi.sk/d/OrIkFq2yYQKJ3Q) can be downloaded with the following commands 
 ```bash
 pip install zenodo-get
-zenodo_get https://zenodo.org/record/4153431 --output_dir=Cube++
+zenodo_get https://zenodo.org/record/4153431 --output-dir=Cube++
+cd Cube++/
+wget https://storage.yandexcloud.net/cubepng0/PNG0.zip
 ```
 * [SimpleCube++](https://zenodo.org/record/4153431/files/SimpleCube%2B%2B.zip) (2GB, 2234 images) 
+```bash
+wget https://zenodo.org/record/4153431/files/SimpleCube++.zip
+```
 * FTP mirror [ftp://vis.iitp.ru/Cube++](ftp://vis.iitp.ru/Cube++) 
 
 
@@ -65,13 +70,16 @@ See also a more [detailed description](./description/description.md#simplecube).
 
 # Papers
 If you use the dataset in your research, please refer to the following paper:
-* [The Cube++ Illumination Estimation Dataset](https://arxiv.org/abs/2011.10028).
+* [The Cube++ Illumination Estimation Dataset](https://ieeexplore.ieee.org/document/9296220) (arXiv [preprint](https://arxiv.org/abs/2011.10028)).
 ```
 @article{ershov2020cube++,
   title={The Cube++ Illumination Estimation Dataset},
-  author={Ershov, Egor and Savchik, Alex and Semenkov, Illya and Bani{\'c}, Nikola and Belokopytov, Alexander and Senshina, Daria and Koscevi{\'c}, Karlo and Suba{\v{s}}i{\'c}, Marko and Lon{\v{c}}ari{\'c}, Sven},
-  journal={arXiv preprint arXiv:2011.10028},
-  year={2020}
+  author={Ershov, Egor and Savchik, Alexey and Semenkov, Illya and Bani{\'c}, Nikola and Belokopytov, Alexander and Senshina, Daria and Ko{\v{s}}{\v{c}}evi{\'c}, Karlo and Suba{\v{s}}i{\'c}, Marko and Lon{\v{c}}ari{\'c}, Sven},
+  journal={IEEE Access},
+  volume={8},
+  pages={227511--227527},
+  year={2020},
+  publisher={IEEE}
 }
 ```
 * [Problems of dataset creation for light source estimation](https://arxiv.org/abs/2006.02692).
