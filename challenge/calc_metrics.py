@@ -36,10 +36,13 @@ def angle(v1, v2):
 
 def repr_ang_error(gt, pred): 
     """Calc reproduction angular errors. See "Finlayson, Graham D., and Roshanak Zakizadeh. Reproduction angular
-        error: An improved performance metric for illuminant estimation." """
+        error: An improved performance metric for illuminant estimation." 
+
+    In the IEC#1 arguments order was mistakenly swapped. It slightly changed metric values within the same competitors' solutions order. 
+    """
     errs = [] 
-    for v1, v2 in zip(gt, pred):
-        err = angle([1, 1, 1], v2 / v1)
+    for v_gt, v_pred in zip(gt, pred):
+        err = angle([1, 1, 1], v_gt / v_pred)
         errs.append(err)
     return np.array(errs)
 
